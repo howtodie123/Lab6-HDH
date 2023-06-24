@@ -151,8 +151,7 @@ void OPT(int ref[], int n, int page)
 				total_page[current_page][j] = ref[j];
 			}
 			else {
-				
-				int pivot = Farest_Element(ref, j, page);
+				int pivot = Farest_Element_Oppsite(ref, j, page, n);
 				total_page[pivot][j] = ref[j];
 			}
 			page_fault[j] = 1;
@@ -191,8 +190,7 @@ void LRU(int ref[], int n, int page)
 				total_page[current_page][j] = ref[j];
 			}
 			else {
-
-				int pivot = Farest_Element_Oppsite(ref, j, page, n);
+                                int pivot = Farest_Element(ref, j, page);
 				total_page[pivot][j] = ref[j];
 			}
 			page_fault[j] = 1;
