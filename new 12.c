@@ -226,7 +226,7 @@ int main() {
 	printf("1. FIFO algorithm\n");
 	printf("2. OPT algorithm\n");
 	printf("3. LRU algorithm\n");
-	printf("--- Enter input ---\n");4
+	printf("--- Enter input ---\n");
 	scanf("%d",&temp);
 
 	printf("--- Page Replacement algorithm--- \n");
